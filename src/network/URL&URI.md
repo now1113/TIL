@@ -54,7 +54,7 @@ URI는 그 자체로 **이름(test.co.kr)**이거나
 
 ## URI URL 구조
 
-![img.png](img.png)
+![img.png](img/img.png)
 
 - Scheme : 리소스에 접근하는데 사용할 프로토콜, 웹에서는 http, https
 - Host : 접근할 대상(서버)의 호스트명
