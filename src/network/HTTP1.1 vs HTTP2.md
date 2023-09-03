@@ -26,7 +26,7 @@ HTTP/1.1의 주요 특징 중 하나는 **지속적인 연결**이다.
 
 >**Connection 유지**, Connection: keep-alive가 default
 
-![http.png](img/http.png)
+![http.png](img/http.PNG)
 
 
 HTTP 2 에서는 한번에 n개의 데이터가 필요하다고 한번에 request를 보내고 서버에서는 데이터들을
@@ -39,7 +39,7 @@ HTTP/1.1 과의 주요한 차이점은 요청/응답 cycle을 기다리지 않�
 
 **하나의 connection에서 multiplexing 전송**이 가능하다는 점이다.
 
-![http2.png](img/http2.png)
+![http2.png](img/http2.PNG)
 
 HTTP2 에서는 필요한 request들을 한번에 묶어 보낸다.
 
@@ -47,7 +47,7 @@ HTTP2 에서는 필요한 request들을 한번에 묶어 보낸다.
 
 ## Binary frame & multiplexing
 
-![app1.png](img/app1.png)
+![app1.png](img/app1.PNG)
 
 HTTP body 부분이 1.1에서는 text로 전송되었지만 **2.0에서는 binary frame 단위로 전송**된다.
 
@@ -58,7 +58,7 @@ HTTP body 부분이 1.1에서는 text로 전송되었지만 **2.0에서는 binar
 
 **2.0에서는 전송 최소 단위가 binary frame**이 된다.
 
-![push.png](img/push.png)
+![push.png](img/push.PNG)
 
 2.0에서는 이렇게 binary frame 단위로 쪼개서 보내는 방식이기 때문에, 하나의 connection을 여러 stream이 이용할 수 있어
 다중 전송(multiplexing)이 가능하다.
@@ -69,7 +69,7 @@ TCP/IP 소켓통신 내용을 암호화는 것인데 우리는 SSL 이라는 이
 
 ## 헤더 압축
 
-![header.png](img/header.png)
+![header.png](img/header.PNG)
 
 HTTP 헤더가 text로 되어있는데, 중복되는 요소들이 굉장히 많다.
 
